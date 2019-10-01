@@ -1,0 +1,292 @@
+OriginTimes:
+  'virus':
+    start: 2788
+    susceptibles:
+      - host: 1704
+
+CompartmentTypes:
+  'hosts':
+    migration.rates: ()
+    coalescent.rate: 1.2
+    bottleneck.size: 1
+    wait.time.distr:
+      distr: 'exp'
+      hyperparameters:
+        - rate: 20
+    popn.growth.dynamics:
+      piece1:
+        - startTime: 0
+        - startPopn: 1
+        - endTime: 5
+        - endPopn: 20
+      piece2:
+        - startTime: 5
+        - startPopn: 10
+
+LineageTypes:
+ 'virus':
+
+Compartments:
+  '265':
+    type: host
+    source: '442'
+    branching.time: 2285
+    replicates: 1
+  '1054':
+    type: host
+    source: '442'
+    branching.time: 2283
+    replicates: 1
+  '636':
+    type: host
+    source: '364'
+    branching.time: 2274
+    replicates: 1
+  '161':
+    type: host
+    source: '62'
+    branching.time: 2272
+    replicates: 1
+  '891':
+    type: host
+    source: '636'
+    branching.time: 2267
+    replicates: 1
+  '760':
+    type: host
+    source: '636'
+    branching.time: 2263
+    replicates: 1
+  '863':
+    type: host
+    source: '891'
+    branching.time: 2263
+    replicates: 1
+  '487':
+    type: host
+    source: '55'
+    branching.time: 2241
+    replicates: 1
+  '224':
+    type: host
+    source: '760'
+    branching.time: 2231
+    replicates: 1
+  '1125':
+    type: host
+    source: '224'
+    branching.time: 2068
+    replicates: 1
+  '486':
+    type: host
+    source: '760'
+    branching.time: 2021
+    replicates: 1
+  '754':
+    type: host
+    source: '1125'
+    branching.time: 1941
+    replicates: 1
+  '299':
+    type: host
+    source: '442'
+    branching.time: 1732
+    replicates: 1
+  '129':
+    type: host
+    source: '442'
+    branching.time: 1585
+    replicates: 1
+  '13':
+    type: host
+    source: '754'
+    branching.time: 1391
+    replicates: 1
+  '634':
+    type: host
+    source: '760'
+    branching.time: 1338
+    replicates: 1
+  '977':
+    type: host
+    source: '634'
+    branching.time: 1336
+    replicates: 1
+  '432':
+    type: host
+    source: '634'
+    branching.time: 1335
+    replicates: 1
+  '379':
+    type: host
+    source: '634'
+    branching.time: 1306
+    replicates: 1
+  '317':
+    type: host
+    source: '1054'
+    branching.time: 1305
+    replicates: 1
+  '80':
+    type: host
+    source: '379'
+    branching.time: 1304
+    replicates: 1
+  '517':
+    type: host
+    source: '80'
+    branching.time: 1264
+    replicates: 1
+  '1184':
+    type: host
+    source: '265'
+    branching.time: 1247
+    replicates: 1
+  '1260':
+    type: host
+    source: '129'
+    branching.time: 980
+    replicates: 1
+  '378':
+    type: host
+    source: '379'
+    branching.time: 727
+    replicates: 1
+  '347':
+    type: host
+    source: '62'
+    branching.time: 673
+    replicates: 1
+  '777':
+    type: host
+    source: '760'
+    branching.time: 408
+    replicates: 1
+  '1579':
+    type: host
+    source: '80'
+    branching.time: 331
+    replicates: 1
+  '154':
+    type: host
+    source: '442'
+    branching.time: 184
+    replicates: 1
+  '1015':
+    type: host
+    source: '154'
+    branching.time: 181
+    replicates: 1
+  '248':
+    type: host
+    source: '154'
+    branching.time: 170
+    replicates: 1
+  '188':
+    type: host
+    source: '248'
+    branching.time: 163
+    replicates: 1
+  '353':
+    type: host
+    source: '248'
+    branching.time: 163
+    replicates: 1
+  '136':
+    type: host
+    source: '353'
+    branching.time: 157
+    replicates: 1
+  '60':
+    type: host
+    source: '863'
+    branching.time: 150
+    replicates: 1
+  '546':
+    type: host
+    source: '248'
+    branching.time: 147
+    replicates: 1
+  '961':
+    type: host
+    source: '353'
+    branching.time: 104
+    replicates: 1
+  '1161':
+    type: host
+    source: '248'
+    branching.time: 69
+    replicates: 1
+  '890':
+    type: host
+    source: '1161'
+    branching.time: 43
+    replicates: 1
+  '1414':
+    type: host
+    source: '1054'
+    branching.time: -107
+    replicates: 1
+  '1466':
+    type: host
+    source: '1414'
+    branching.time: -116
+    replicates: 1
+  '1553':
+    type: host
+    source: '248'
+    branching.time: -127
+    replicates: 1
+
+Lineages:
+  '1':
+    type: virus
+    sampling.time: 653
+    location: '13'
+    replicates: 1
+  '2':
+    type: virus
+    sampling.time: 102
+    location: '634'
+    replicates: 1
+  '3':
+    type: virus
+    sampling.time: 215
+    location: '977'
+    replicates: 1
+  '4':
+    type: virus
+    sampling.time: 1273
+    location: '432'
+    replicates: 1
+  '5':
+    type: virus
+    sampling.time: 704
+    location: '379'
+    replicates: 1
+  '6':
+    type: virus
+    sampling.time: 925
+    location: '517'
+    replicates: 1
+  '7':
+    type: virus
+    sampling.time: 677
+    location: '1260'
+    replicates: 1
+  '8':
+    type: virus
+    sampling.time: 194
+    location: '777'
+    replicates: 1
+  '9':
+    type: virus
+    sampling.time: 148
+    location: '154'
+    replicates: 1
+  '10':
+    type: virus
+    sampling.time: 0
+    location: '890'
+    replicates: 1
+
