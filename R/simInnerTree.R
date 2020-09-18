@@ -233,6 +233,7 @@ sim.inner.tree <- function(run) {
 #' 
 #' @return list of Lineage objects to pass to source Compartment
 #' @keywords internal
+#' @import countreg
 .resolve.bottleneck <- function(run, comp) {
   
   time <- comp$get.branching.time()
@@ -240,8 +241,9 @@ sim.inner.tree <- function(run) {
     stop("Error in .resolve.bottleneck: Compartment ", comp$get.name(), 
          " has no assigned branching time.")
   }
+  mean.size <- comp$get.type()$get.bottleneck.size() 
   
-  bottleneck.size <- comp$get.type()$get.bottleneck.size()
+  bottleneck.size <- countreg::rztnbinom(1, mean.size, 1) 
   if (!is.numeric(bottleneck.size)) {
     stop("Error in .resolve.bottleneck: Compartment ", comp$get.name(),
          " has no bottleneck size specified.")
